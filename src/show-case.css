@@ -1,0 +1,128 @@
+:root{
+    --color-primary:#4643ee;
+    --color-secondary:#fff;
+    --text-color:#727070;
+
+}
+.center-flex{
+    padding-top: 1.25rem;
+    margin: 1.875rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 3rem;
+}
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.showcase-content .flex-row{
+    margin-left: 0.5rem;
+    padding:0;
+}
+.showcase-content .flex-row img{
+   
+    height: 100%;
+}
+
+.showcase-content .flex-row p{
+    margin-left: 0.5rem;
+
+}
+.flex-2 .showcase-content{
+    width: 55%;
+    margin-top: 4rem
+}
+.showcase-content h2{
+    width: 80%;
+
+}
+.showcase-img{
+    width: 33%;
+}
+.showcase-img img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+
+}
+.email-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border: #c5c4c4 1px solid;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 2.5rem;
+
+}
+.email-container input{
+    width: 100%;
+    border: none;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+}
+.email-container .btn-primary{
+    height: 3rem;
+    width: 30%;
+}
+.email-container i{
+    color: var(--color-primary);
+}
+
+  /* mobile*/
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .flex-2{
+        flex-direction: column;
+        padding: 0;
+    }
+    .flex-2 .showcase-content{
+        justify-content: center;
+        width: 100%;
+    }
+    .flex-2 .showcase-content h1{
+        font-size: 1.875rem;
+        line-height: 1.11;
+        text-align: center;
+    }
+    .flex-2 .showcase-content h2{
+        margin-top: 1.25rem;
+        text-align: center;
+        font-size: 1.125rem;
+        align-self: center;
+    }
+    .email-container{
+        width: 100%;
+        padding: 0.5rem;
+
+    }
+    .email-container input{
+        width: 70%;
+        border: none;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .showcase-img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    
+  }
+

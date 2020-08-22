@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Volkhov:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+:root{
+    --color-primary:#4643ee;
+    --color-secondary:#fff;
+    --text-color:#727070;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding:1rem;
+    position: sticky;
+}
+
+.nav-box{
+    display: flex;
+}
+.nav-box .btn-primary{
+    margin-left: 1rem;
+}
+.logo{
+    height: 2.75rem;
+    margin-left: 6rem;
+}
+
+.nav-box .hor-list{
+    margin-left:2rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hor-list .hor-list-item{
+    margin-left: 2.5rem;
+    line-height: 1.5;
+    
+}
+.hor-list-item a{
+    text-decoration: none;
+}
+.hor-list-item p{
+    color: var(--text-color);
+}
+
+
+.tottle-button{
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+
+}
+
+.tottle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #727070;
+    border-radius: 10px;
+
+
+}
+.active{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .nav-container{
+        justify-content: start;
+        flex-direction: column;
+    }
+    .nav-box{
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+    .nav-box .hor-list{
+        margin:0;
+        flex-direction: column;
+        justify-items: start;
+
+    }
+    .nav-box .hor-list .hor-list-item{
+        margin: 0;
+        justify-self: start;
+        margin-right:auto;
+        padding: 1rem;
+    }
+    
+
+    .nav-box .hor-list{
+       
+    }
+    .nav-box .btn-secondary , .btn-primary{
+        
+      width: auto;
+      margin: 0;
+        
+    }
+    .nav-box .btn-primary {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .nav-container .logo{
+        width: 8rem;
+        height: auto;
+        justify-self: start;
+        margin-right: auto;
+    }
+    .tottle-button{
+        display: flex;
+    }
+    .nav-container .active{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+    .nav-container .active1{
+        display: flex;
+    }
+    
+
+}
+
+
+

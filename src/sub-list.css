@@ -1,0 +1,24 @@
+.flexc-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flexc-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.s-pB{
+    text-align: center;
+    align-self: center;
+    margin: 1rem 20rem;
+}
+.flexr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
